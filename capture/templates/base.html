@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <title>{% block title %}{% endblock %}</title>
+        {% block css %}
+        <link rel="stylesheet" href="/static/stylesheets/normalize.css" />
+        <link rel="stylesheet" href="/static/stylesheets/main.css" />
+        {% endblock %}
+        {% block script %}
+        <script src="/static/scripts/vendor/modernizr-2.6.2.min.js"></script>
+        {% endblock %}
+    </head>
+        <body>
+        {% block body %}
+        {% endblock body %}
+
+        <header>
+            <nav class="center">
+            <h1 class="logo"><a href="/">OH! CAPTURE</a></h1>
+            </nav>
+        </header>
+
+        <div class="content">{% block content %}{% endblock%}</div>
+
+        <footer>{% block footer %}{% endblock%}</footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/static/scripts/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/static/scripts/plugins.js"></script>
+        <script src="/static/scripts/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+        </body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for entry in entries | sort(reverse=True, attribute="date_time") %}
+        <div>
+            {% if entry.photo_id %}
+                {{ render_photo(entry.photo) }}
+            {% elif entry.message_id %}
+                {{ render_message(entry.message) }}
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% macro render_photo(photo) %}
+    <article class="center">
+        <div class="crop">
+            <img class="cropped" src="/static/images/{{photo.url}}">
+        </div>
+        <div class="date_time">{{photo.date_time}}</div>
+    </article>
+{% endmacro %}
+
+{% macro render_message(message) %}
+    <article class="center">
+        <div class="bubble">
+            <h3>{{message.body}}</h3>
+        </div>
+            <div class="date_time">Sent from {{ message.sent }} on {{ message.date_time }}</div>
+    </article>
+{% endmacro %}
+
+{% block footer %}
+    <p class="center">a <a href="http://www.meganspeir.com">Megan Speir</a> project</p>
+{% endblock%}
