@@ -47,7 +47,7 @@ def sanitize_date_time(metadata):
 
 
 def insert_record(filename, metadata):
-    """Inserts new record into databad with filename and metadata"""
+    """Inserts new record into database with filename and metadata"""
     exists = Photo.query.filter(Photo.url == filename).count()
     if not exists:
         photo = Photo(url=filename,
