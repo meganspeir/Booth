@@ -1,12 +1,12 @@
 The Making & Re-factoring of Capture:
-_______________
+==========
 
 The idea came from wanting to have a photobooth present at my 1 year wedding celebration. The drawbacks to other implementations of photobooths were mainly the cost and in the digital realm, not having complete control over the photograph.
 
 Because the project started out in this selfish vain, it was easiest to imagine things as I was going to need them. I was the only user and only my event mattered. So the project took on two main parts. The Raspberry Pi photobooth. And the Flask web app, Capture. (TODO: makes more sense to separate the two completely).
 
 Photobooth:
-_______________
+==========
 
 A Raspberry Pi built into a physical "mini booth".
 
@@ -35,12 +35,12 @@ Uniquify uses hashing to provide each photo with a unique filename.
 Upload/offline moves and renames the photos from the Pi to the computers local filesystem.
 
 Nifty Add-On
-_______________
+==========
 
 Inside the booth there is also a small AdaFruit printer. Check out the code in printer.py to see how to make the printer say whatever.
 
 Capture:
-_______________
+==========
 
 A digital guestbook web application that is a timeline of photos and messages for events. Made with Python, Flask, Postgres, SQLAlchemy, Gphoto2 library, EXIF, Twilio API (for messages), nginx, html, css, javascript.
 
@@ -54,7 +54,7 @@ The database tables are defined in models.py. One for messages, one for photos a
 Views.py displays everything from the database in the style of a single page app. Upon refresh the watch.py script is triggered and views.py will return any new content from the database.
 
 Coming Soon...
-_______________
+==========
 
 - Photo post processing
 - Support GIF
@@ -66,3 +66,5 @@ _______________
 - Moar Javascript
 - Photo Ratings (Event photo stacks top rated photo represents that of the stack, like iPhoto)
 - Event sentiment analysis based on text messages?
+- Screenshots!
+- Demo
