@@ -1,9 +1,9 @@
-The Making & Re-factoring of Capture:
+The Making & Re-factoring of Booth:
 ==========
 
 The idea came from wanting to have a photobooth present at my 1 year wedding celebration. The drawbacks to other implementations of photobooths were mainly the cost and in the digital realm, not having complete control over the photograph.
 
-Because the project started out in this selfish vain, it was easiest to imagine things as I was going to need them. I was the only user and only my event mattered. So the project took on two main parts. The Raspberry Pi photobooth. And the Flask web app, Capture. (TODO: makes more sense to separate the two completely).
+Because the project started out in this selfish vain, it was easiest to imagine things as I was going to need them. I was the only user and only my event mattered. So the project took on two main parts. The Raspberry Pi photobooth. And the Flask web app, Guest Book (formerly Capture). (TODO: makes more sense to separate the two completely).
 
 Photobooth:
 ==========
@@ -39,7 +39,7 @@ Nifty Add-On
 
 Inside the booth there is also a small AdaFruit printer. Check out the code in printer.py to see how to make the printer say whatever.
 
-Capture:
+Guest Book:
 ==========
 
 A digital guestbook web application that is a timeline of photos and messages for events. Made with Python, Flask, Postgres, SQLAlchemy, Gphoto2 library, EXIF, Twilio API (for messages), nginx, html, css, javascript.
