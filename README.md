@@ -53,7 +53,7 @@ The database tables are defined in models.py. One for messages, one for photos a
 
 Views.py displays everything from the database in the style of a single page app. Upon refresh the watch.py script is triggered and views.py will return any new content from the database.
 
-Maybe one day...
+Maybe One Day...
 ==========
 
 - Photo post processing
