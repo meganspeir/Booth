@@ -39,6 +39,14 @@ Nifty Add-On
 
 Inside the booth there is also a small AdaFruit printer. Check out the code in printer.py to see how to make the printer say whatever.
 
+Product
+==========
+
+![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-front.jpg)
+
+![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-back.jpg)
+
+
 Guest Book:
 ==========
 
