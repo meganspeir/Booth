@@ -1,3 +1,10 @@
+Photo Booth
+==========
+
+![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-front.jpg)
+
+![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-back.jpg)
+
 The Making & Re-factoring of Booth:
 ==========
 
@@ -5,7 +12,7 @@ The idea came from wanting to have a photobooth present at my 1 year wedding cel
 
 Because the project started out in this selfish vain, it was easiest to imagine things as I was going to need them. I was the only user and only my event mattered. So the project took on two main parts. The Raspberry Pi photobooth. And the Flask web app, Guest Book (formerly Capture). (TODO: makes more sense to separate the two completely).
 
-Photobooth:
+Product:
 ==========
 
 A Raspberry Pi built into a physical "mini booth".
@@ -38,14 +45,6 @@ Nifty Add-On
 ==========
 
 Inside the booth there is also a small AdaFruit printer. Check out the code in printer.py to see how to make the printer say whatever.
-
-Product
-==========
-
-![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-front.jpg)
-
-![alt tag](https://raw.github.com/MeganSpeir/Booth/master/booth-back.jpg)
-
 
 Guest Book:
 ==========
